@@ -36,3 +36,77 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+# Chat-App
+
+## 環境
+
+- Ubuntu 20.04
+- Node Version Manager (nvm) v0.39.3
+- Node.js v16.19.1
+- Node Package Manager (npm) v8.19.3
+- yarn v1.22.19
+
+## Ubuntu
+
+~# `apt update`
+
+## Node.js
+
+### Node.js バージョン管理 nvm インストール
+
+~# `git clone https://github.com/nvm-sh/nvm.git ~/.nvm`
+
+~# `source ~/.nvm/nvm.sh`
+
+~# `touch /etc/profile.d/nvm.sh`
+
+/etc/profile.d/nvm.sh
+```
+source ~/.nvm/nvm.sh
+
+nvm use 0.39.3 > /dev/null
+```
+~# `nvm help`
+
+~# `nvm ls-remote`
+
+~# `nvm install v16.19.1`
+
+## yarn
+
+### yarn インストール
+
+リポジトリのGPGキーをインポート
+
+~# `curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -`
+
+arnAPTリポジトリをシステムのソフトウェアリポジトリリストに追加
+
+~# `echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list`
+
+~# `apt install yarn`
+
+## Next.js
+
+~# `yarn create next-app --typescript`
+
+~# `cd chat-app`
+
+~/chat-app# `yarn dev`
+
+## GitHub
+
+~/chat-app# `git init`
+
+~/chat-app# `git config --global user.name <Username>`
+
+~/chat-app# `git config --global user.email <EmailAddress>`
+
+~/chat-app# `git add .`
+
+~/chat-app# `git commit -m 'first commit'`
+
+~/chat-app# `git remote add origin <RemoteRipositoryURL>`
+
+~/chat-app# `git push origin main`
