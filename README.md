@@ -51,6 +51,18 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ~# `apt update`
 
+## Apache
+
+### Apache インストール
+
+~# `apt install apache2`
+
+~# `ufw app list`
+
+~# `ufw allow 'Apache'`
+
+~# `ufw status`
+
 ## Node.js
 
 ### Node.js バージョン管理 nvm インストール
@@ -62,11 +74,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ~# `touch /etc/profile.d/nvm.sh`
 
 /etc/profile.d/nvm.sh
+
 ```
 source ~/.nvm/nvm.sh
 
 nvm use 0.39.3 > /dev/null
 ```
+
 ~# `nvm help`
 
 ~# `nvm ls-remote`
@@ -77,11 +91,11 @@ nvm use 0.39.3 > /dev/null
 
 ### yarn インストール
 
-リポジトリのGPGキーをインポート
+リポジトリの GPG キーをインポート
 
 ~# `curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -`
 
-arnAPTリポジトリをシステムのソフトウェアリポジトリリストに追加
+arnAPT リポジトリをシステムのソフトウェアリポジトリリストに追加
 
 ~# `echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list`
 
@@ -89,13 +103,15 @@ arnAPTリポジトリをシステムのソフトウェアリポジトリリス�
 
 ## Next.js
 
+### Next.js のセットアップ
+
 ~# `yarn create next-app --typescript`
 
 ~# `cd chat-app`
 
 ~/chat-app# `yarn dev`
 
-## GitHub
+### GitHub
 
 ~/chat-app# `git init`
 
@@ -110,3 +126,15 @@ arnAPTリポジトリをシステムのソフトウェアリポジトリリス�
 ~/chat-app# `git remote add origin <RemoteRipositoryURL>`
 
 ~/chat-app# `git push origin main`
+
+### TypeScript の設定
+
+~/chat-app# `yarn add -D @tsconfig/strictest`
+
+### prettier を導入
+
+~/chat-app# `yarn add -D prettier`
+
+### format と lint の設定
+
+~/chat-app# `yarn add -D npm-run-all`
