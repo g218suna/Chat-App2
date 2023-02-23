@@ -111,7 +111,7 @@ arnAPT リポジトリをシステムのソフトウェアリポジトリリス�
 
 ~/chat-app# `yarn dev`
 
-### GitHub
+## GitHub
 
 ~/chat-app# `git init`
 
@@ -127,14 +127,26 @@ arnAPT リポジトリをシステムのソフトウェアリポジトリリス�
 
 ~/chat-app# `git push origin main`
 
-### TypeScript の設定
+## TypeScript の設定
 
 ~/chat-app# `yarn add -D @tsconfig/strictest`
 
-### prettier を導入
+## prettier を導入
 
 ~/chat-app# `yarn add -D prettier`
 
-### format と lint の設定
+## format と lint の設定
 
 ~/chat-app# `yarn add -D npm-run-all`
+
+## Chakra UI
+
+~/chat-app# `yarn add @chakra-ui/react @emotion/react @emotion/styled framer-motion`
+
+~/chat-app# 
+
+~/chat-app# 
+
+~/chat-app# 
+
+~/chat-app# 
