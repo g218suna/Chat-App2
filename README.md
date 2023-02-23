@@ -51,9 +51,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ~# `apt update`
 
-## Apache
-
-### Apache インストール
+## Apache インストール
 
 ~# `apt install apache2`
 
@@ -63,9 +61,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ~# `ufw status`
 
-## Node.js
-
-### Node.js バージョン管理 nvm インストール
+## Node.js バージョン管理 nvm インストール
 
 ~# `git clone https://github.com/nvm-sh/nvm.git ~/.nvm`
 
@@ -87,9 +83,7 @@ nvm use 0.39.3 > /dev/null
 
 ~# `nvm install v16.19.1`
 
-## yarn
-
-### yarn インストール
+## yarn のインストール
 
 リポジトリの GPG キーをインポート
 
@@ -101,9 +95,7 @@ arnAPT リポジトリをシステムのソフトウェアリポジトリリス�
 
 ~# `apt install yarn`
 
-## Next.js
-
-### Next.js のセットアップ
+## Next.js のセットアップ
 
 ~# `yarn create next-app --typescript`
 
@@ -139,14 +131,22 @@ arnAPT リポジトリをシステムのソフトウェアリポジトリリス�
 
 ~/chat-app# `yarn add -D npm-run-all`
 
-## Chakra UI
+## Chakra UI のセットアップ
 
 ~/chat-app# `yarn add @chakra-ui/react @emotion/react @emotion/styled framer-motion`
 
-~/chat-app# 
+## Next.js に Firebase をセットアップ
 
-~/chat-app# 
+~/chat-app# `yarn add firebase`
 
-~/chat-app# 
+~/chat-app# `mkdir -p src/lib/firebase`
+
+~/chat-app# `touch src/lib/firebase/firebase.ts`
+
+~/chat-app# `touch .env.local`
+
+~/chat-app# `mkdir -p src/constant`
+
+~/chat-app# `touch src/constant/env.ts`
 
 ~/chat-app# 
