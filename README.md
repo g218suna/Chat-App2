@@ -57,11 +57,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ~# `apt update`
 
+~# `apt-get update`
+
 ~# `apt-get install git`
 
 ~# `apt-get install curl`
 
 ~# `apt-get install gnupg2`
+
+~# `apt remove cmdtest`
 
 ## Apache インストール
 
@@ -105,7 +109,7 @@ arnAPT リポジトリをシステムのソフトウェアリポジトリリス�
 
 ~# `echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list`
 
-~# `apt install yarn`
+~# `apt-get install yarn`
 
 ## Next.js のセットアップ
 
