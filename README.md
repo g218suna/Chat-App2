@@ -47,9 +47,21 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - Node Package Manager (npm) v8.19.3
 - yarn v1.22.19
 
+## Docker
+
+`docker pull ubuntu:20.04`
+
+`docker container run -it -d --name ubuntu2004-container ubuntu:20.04`
+
 ## Ubuntu
 
 ~# `apt update`
+
+~# `apt-get install git`
+
+~# `apt-get install curl`
+
+~# `apt-get install gnupg2`
 
 ## Apache インストール
 
