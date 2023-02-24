@@ -149,4 +149,14 @@ arnAPT リポジトリをシステムのソフトウェアリポジトリリス�
 
 ~/chat-app# `touch src/constant/env.ts`
 
-~/chat-app# 
+## Ubuntu 監視ファイル上限増加
+
+~/chat-app# `echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf`
+
+~/chat-app# `sudo sysctl -p`
+
+## サインアップページ作成
+
+~/chat-app# `mkdir -p src/pages/signup`
+
+~/chat-app# `touch src/pages/signup/index.tsx`
