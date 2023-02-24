@@ -155,8 +155,14 @@ arnAPT リポジトリをシステムのソフトウェアリポジトリリス�
 
 ~/chat-app# `sudo sysctl -p`
 
-## サインアップページ作成
+## サインアップ機能作成
 
 ~/chat-app# `mkdir -p src/pages/signup`
 
 ~/chat-app# `touch src/pages/signup/index.tsx`
+
+## サインイン機能作成
+
+~/chat-app# `mkdir -p src/pages/signin`
+
+~/chat-app# `touch src/pages/signuin/index.tsx`
