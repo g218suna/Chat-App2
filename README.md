@@ -99,11 +99,11 @@ nvm use 0.39.3 > /dev/null
 
 リポジトリの GPG キーをインポート
 
-~# `curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -`
+~# `curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -`
 
 arnAPT リポジトリをシステムのソフトウェアリポジトリリストに追加
 
-~# `echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list`
+~# `echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list`
 
 ~# `apt install yarn`
 
